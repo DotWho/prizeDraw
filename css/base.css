@@ -1,0 +1,427 @@
+/* code by Dr.Who */
+/* email dot.who@outlook.com */
+html {
+    font-family: 12;
+    line-height: 1.5;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing:grayscale;
+    text-rendering: optimizeLegibility;
+}
+
+*,
+*:after,
+*:before {
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+html,
+body {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background: url(../img/bg.jpg) repeat;
+}
+
+.hide {
+    display: none;
+}
+
+.hd {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+    margin: auto;
+    width: 100%;
+    height: 55px;
+    background: url(../img/top.png) repeat-x;
+}
+
+main {
+    position: relative;
+    padding: 230px 0;
+    margin: 0 auto;
+    width: 62%;
+    height: 100%;
+}
+
+.ft {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    margin: auto;
+    width: 100%;
+    height: 51px;
+    background: url(../img/bottom.png) repeat-x;
+}
+
+.zjmd,
+.reset {
+    display: block;
+    width: 100px;
+    height: 51px;
+    line-height: 51px;
+    font-size: 18px;
+    color: transparent;
+    background-color: transparent;
+    border: 0;
+    border-radius: 4px;
+    transition: all 300ms ease;
+}
+
+.zjmd:hover,
+.reset:hover {
+    color: #fff;
+    background-color: #cc1813;
+}
+
+.zjmd {
+    float: left;
+}
+
+.reset {
+    float: right;
+}
+
+.main-top {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    left: 0;
+    margin: auto;
+    z-index: 2;
+    width: 800px;
+}
+
+.btn span {
+    display: inline-block;
+    width: 80px;
+    height: 36px;
+    line-height: 36px;
+    font-size: 14px;
+    color: #dbb76b;
+    background-color: #cc1813;
+    float: left;
+}
+
+.btn span:first-child {
+    border-radius: 4px 0 0 4px;
+}
+
+.btn span:last-child {
+    border-radius: 0 4px 4px 0;
+}
+
+.btn span.active {
+    color: #cc1813;
+    background-color: #dbb76b;
+    transform: scale3d(1.2, 1.2, 1);
+    border-radius: 4px;
+}
+
+.namefor {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 60px;
+    margin: auto;
+    z-index: 2;
+    text-align: center;
+}
+
+.namefor span {
+    overflow: hidden;
+    margin: 0 5px 23px 0;
+    display: inline-block;
+    width: 220px;
+    height: 69px;
+    line-height: 67px;
+    font-size: 23px;
+    text-align: center;
+    color: #dbb76b;
+    background-color: #cc1813;
+    opacity: 0;
+    text-overflow: ellipsis;
+    border: 1px solid #dbb76b;
+    border-radius: 4px;
+    box-shadow: 0px 5px 20px #dbb76bd6;
+    transform: scale3d(1.5, 1.5, 1);
+    animation: iShowIn 600ms forwards cubic-bezier(.23,1,.32,1);
+}
+
+@keyframes iShowIn {
+    to {
+        opacity: 1;
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+.namefor span:nth-child(1) {
+    animation-delay: 300ms;
+}
+
+.namefor span:nth-child(2) {
+    animation-delay: 800ms;
+}
+
+.namefor span:nth-child(3) {
+    animation-delay: 1300ms;
+}
+
+.namefor span:nth-child(4) {
+    animation-delay: 1800ms;
+}
+
+.namefor span:nth-child(5) {
+    animation-delay: 2300ms;
+}
+
+.namefor span:nth-child(6) {
+    animation-delay: 2800ms;
+}
+
+.namefor span:nth-child(7) {
+    animation-delay: 3300ms;
+}
+
+.namefor span:nth-child(8) {
+    animation-delay: 3800ms;
+}
+
+.namefor span:nth-child(9) {
+    animation-delay: 4300ms;
+}
+
+.namefor span:nth-child(10) {
+    animation-delay: 4800ms;
+}
+
+.namefor span:nth-child(11) {
+    animation-delay: 5300ms;
+}
+
+.namefor span:nth-child(12) {
+    animation-delay: 5800ms;
+}
+
+.namefor span:nth-child(13) {
+    animation-delay: 6300ms;
+}
+
+.namefor span:nth-child(14) {
+    animation-delay: 6800ms;
+}
+
+.namefor span:nth-child(15) {
+    animation-delay: 7300ms;
+}
+
+.area {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.a1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.a2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.a3 {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.a4 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.cbtn {
+    position: absolute;
+    right: 0;
+    bottom: -125px;
+    left: 0;
+    z-index: 3;
+    margin: auto;
+}
+
+#redoit,
+#doit {
+    font-size: 25px;
+    width: 250px;
+    height: 65px;
+    line-height: 52px;
+    color: #dbb76b;
+    background-color: #cc1813;
+    border: 5px solid #dbb76b;
+    cursor: pointer;
+    border-radius: 50px;
+}
+
+.cclist {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 3;
+    margin: auto;
+    background-color: rgba(0, 0, 0, .6)
+}
+
+.cclist > div {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 15px;
+    margin: auto;
+    width: 300px;
+    height: 100px;
+    background-color: #fff;
+    border-radius: 4px;
+}
+
+.cclist input {
+    margin-bottom: 10px;
+    width: 150px;
+    height: 36px;
+    color: #dbb76b;
+    border-radius: 4px;
+    border: 1px solid #cc1813;
+    text-indent: 10px;
+}
+
+.cclist button {
+    display: inline-block;
+    width: 49%;
+    height: 36px;
+    font-size: 16px;
+    color: #dbb76b;
+    border: 0;
+    background-color: #cc1813;
+    border-radius: 4px;
+}
+
+.gift {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    margin: auto;
+    padding-top: 61px;
+    width: 280px;
+    height: 485px;
+    background: url(../img/award.png) no-repeat center;
+    background-size: cover;
+}
+
+.gift img {
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+}
+
+.gift p {
+    font-size: 18px;
+    color: #dbb76b;
+    padding-top: 134px;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.hjlist {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 9;
+    margin: auto;
+    padding: 10%;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.hjlist-div {
+    padding: 0 15px;
+    overflow: auto;
+    height: 100%;
+    max-height: 100%;
+    background-color: #fff;
+    border: 1px solid #dbb76b;
+    border-radius: 4px;
+}
+
+.hjlist-div h4 {
+    color: #dbb76b;
+    font-size: 20px;
+}
+
+.lsm {
+    position: relative;
+    margin-bottom: 10px;
+    border: 1px solid #dbb76b;
+    border-radius: 4px;
+}
+
+.ls-lt,
+.ls-rt {
+    min-height: 50px;
+    float: left;
+}
+
+.ls-lt {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 75px;
+    line-height: 50px;
+    border-right: 1px solid #dbb76b;
+}
+
+.ls-rt {
+    padding-left: 85px;
+    color: #dbb76b;
+    font-size: 18px;
+    line-height: 50px;
+    text-align: left;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: block;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+}
